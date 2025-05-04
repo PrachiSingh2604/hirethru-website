@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hirethru Consultancy</title>
+  <title>Candidate Zone - Hirethru Consultancy</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     body {
@@ -22,8 +22,8 @@
     }
 
     .hero {
-      background: url('images/hero.jpg') no-repeat center center/cover;
-      height: 70vh;
+      background: url('images/candidate-hero.jpg') no-repeat center center/cover;
+      height: 50vh;
       color: white;
       display: flex;
       align-items: center;
@@ -32,11 +32,13 @@
       flex-direction: column;
     }
 
-    .feature-box {
-      background-color: #e6f0ff;
-      border: 1px solid #b3d1ff;
-      padding: 20px;
-      margin-bottom: 20px;
+    .content-section {
+      padding: 40px 0;
+    }
+
+    .candidate-img {
+      width: 100%;
+      height: auto;
       border-radius: 10px;
     }
 
@@ -45,13 +47,6 @@
       color: white;
       padding: 20px 0;
       text-align: center;
-    }
-
-    video {
-      border-radius: 10px;
-      margin-top: 20px;
-      max-width: 100%;
-      height: auto;
     }
   </style>
 </head>
@@ -69,8 +64,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
-          <li class="nav-item"><a class="nav-link" href="candidates.html">Candidate Zone</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="candidates.html">Candidate Zone</a></li>
           <li class="nav-item"><a class="nav-link" href="recruiters.html">Recruiter's Desk</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
@@ -81,36 +76,32 @@
   <!-- Hero Section -->
   <div class="hero">
     <div class="container">
-      <h1 class="display-5 fw-bold">Connecting IT Talent with Opportunity</h1>
-      <p class="lead">Your dream job or candidate is just a click away</p>
-      <video controls>
-        <source src="videos/intro.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <h1 class="display-5 fw-bold">Candidate Zone</h1>
+      <p class="lead">Your career growth starts here.</p>
     </div>
   </div>
 
-  <!-- Feature Highlights -->
-  <div class="container my-5">
-    <div class="row text-center">
-      <div class="col-md-4">
-        <div class="feature-box">
-          <h4>High Demand Roles</h4>
-          <p>Explore opportunities in Cloud, DevOps, Data Engineering, Cybersecurity and more.</p>
-        </div>
+  <!-- Content Section -->
+  <div class="container content-section">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <h2>Why Join Hirethru?</h2>
+        <ul>
+          <li>Access to exclusive IT roles across Cloud, DevOps, Data & more</li>
+          <li>Personalized resume review and interview prep</li>
+          <li>Confidential handling of your profile</li>
+          <li>One-on-one career guidance from industry experts</li>
+          <li>Fast-track referrals to top organizations</li>
+        </ul>
       </div>
-      <div class="col-md-4">
-        <div class="feature-box">
-          <h4>Excellent Payscales</h4>
-          <p>We ensure our candidates get what they deserve, including above-industry pay standards.</p>
-        </div>
+      <div class="col-md-6">
+        <img src="images/candidate-success.jpg" alt="Successful Candidate" class="candidate-img" />
       </div>
-      <div class="col-md-4">
-        <div class="feature-box">
-          <h4>Corporate Benefits</h4>
-          <p>Health insurance, hybrid work, bonuses & rapid growth — top benefits from top companies.</p>
-        </div>
-      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <h4>Ready to Elevate Your Career?</h4>
+      <p>Send your resume to <strong>talent@hirethru.in</strong> and let us find the perfect opportunity for you.</p>
     </div>
   </div>
 
